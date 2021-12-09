@@ -1,7 +1,7 @@
 def main():
-    with open("2021/Day_1/first_few.txt") as depths_file:
+    with open("2021/Day_1/input.txt") as depths_file:
         depths_list = depths_file.readlines()
-        depths_list = [line.rstrip() for line in depths_list]
+        depths_list = [int(line.rstrip()) for line in depths_list]
 
     count = 0
     for i in range(len(depths_list)):
